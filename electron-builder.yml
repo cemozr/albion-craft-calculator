@@ -1,0 +1,26 @@
+appId: com.albion.craftcalculator
+productName: Albion Craft Calculator
+directories:
+  buildResources: build
+  output: release
+files:
+  - dist/**/*
+  - node_modules/**/*
+  - package.json
+extraMetadata:
+  main: dist/main/main.js
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: build/icon.ico
+mac:
+  target: dmg
+  icon: build/icon.icns
+linux:
+  target: AppImage
+  icon: build/icon.png
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true

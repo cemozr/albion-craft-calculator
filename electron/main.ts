@@ -196,7 +196,7 @@ function createWindow() {
     minWidth: 900,
     minHeight: 600,
     title: "Albion Craft Calculator EU",
-    icon: path.join(__dirname, "assets/icon.ico"),
+    icon: path.join(__dirname, "build/icon.ico"),
     backgroundColor: "#1a1a2e",
     webPreferences: {
       preload: preloadPath,
